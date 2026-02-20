@@ -1,29 +1,24 @@
-Análisis de Fuga de Clientes (Telco Churn Analysis)
-📋 Descripción del Proyecto
-Este proyecto identifica los factores principales que causan la pérdida de clientes en una empresa de telecomunicaciones. Utilicé Python para la limpieza y procesamiento de datos, y Power BI para crear un tablero de control (dashboard) que permite tomar decisiones estratégicas para mejorar la retención.
+# 📊 Análisis de Fuga de Clientes (Telco Churn)
 
-🛠️ Herramientas Utilizadas
-Python (Pandas, Seaborn, Matplotlib): Limpieza de datos, manejo de nulos y análisis exploratorio.
+## 📝 Descripción del Proyecto
+Este proyecto analiza los motivos por los cuales los clientes de una empresa de telecomunicaciones cancelan sus servicios. Utilicé **Python** para procesar más de 7,000 registros y **Power BI** para crear un tablero de control que identifica a los clientes en riesgo.
 
-Power BI: Visualización de KPIs y creación de filtros interactivos.
+## 🛠️ Herramientas Utilizadas
+* **Python (Pandas, Seaborn):** Limpieza de datos y análisis estadístico.
+* **Power BI:** Visualización de datos y KPIs de negocio.
+* **Google Colab:** Procesamiento inicial del dataset.
 
-Google Colab: Entorno de desarrollo para el script de limpieza.
+## 💡 Hallazgos Principales (Insights)
+* **Contratos:** El 88% de las fugas provienen de contratos **mes a mes**.
+* **Método de Pago:** Los clientes que pagan con **Electronic Check** tienen una tasa de abandono del **45%**.
+* **Antigüedad:** Los clientes con menos de **12 meses** de contrato son los más propensos a irse.
 
-📊 Hallazgos Principales (Insights)
-Contratos de Alto Riesgo: Los clientes con contratos mes a mes tienen la tasa de fuga más alta.
+## 🖥️ Visualización del Dashboard
+A continuación, se muestra el análisis visual realizado en Power BI:
 
-Impacto del Método de Pago: El uso de Electronic Check está vinculado a una tasa de abandono del 45.29%, muy superior a los métodos automáticos.
+![Dashboard de Churn](./captura_dashboard.png)
 
-Lealtad Inicial: Los clientes en su primer año (0-12 meses) son los más propensos a cancelar el servicio.
-
-Pérdida Económica: Se identificó una fuga de ingresos mensuales de aproximadamente $84,000.
-
-🖥️ Dashboard Interactivo
-Aquí presento el análisis visual final:
-
-🚀 Cómo usar este repositorio
-Descarga el archivo analisis_limpieza.py.
-
-Ejecuta el script para procesar el dataset original y obtener Telco_Churn_Clean.csv.
-
-Abre el archivo .pbix en Power BI Desktop para interactuar con los datos.
+## 🚀 Cómo Reproducir el Análisis
+1. Descarga `analisis_limpieza.py` y ejecútalo para limpiar los datos.
+2. El resultado será `Telco_Churn_Clean.csv`.
+3. Abre el archivo de Power BI y vincula el CSV limpio para ver las gráficas.
